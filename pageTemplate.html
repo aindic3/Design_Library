@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        
+        /*Every page in the Library will have these set of attributes and 
+        characteristics. This includes the side scroll bar and the
+        header, which has the various tabs users can click to 
+        explore other aspects of the UI other than the Library */
+            
+            
+ /*--------------------standard layout for all pages in the Library portion------------------*/
+            div.header
+            {
+                width:100%;
+                height:35px;
+                border: 1px solid rgb(38,38,38);
+                background-color: rgb(38,38,38);
+            }
+        div.Main
+            {
+                width:85%;
+                height:675px;
+                border: 1px solid black;  /*remove when comfortable with main content layout*/
+                float: left;
+                padding: 10px 0 0 30px;
+            }  
+            
+            /*--------------scroll bar features and characteristics--------------*/
+            .scrollBar::-webkit-scrollbar 
+            {
+                width: 12px;
+            }
+
+            .scrollBar::-webkit-scrollbar-track 
+            {
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+                border-radius: 10px;
+            }
+
+            .scrollBar::-webkit-scrollbar-thumb 
+            {
+                border-radius: 10px;
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+            }
+            
+             div.scrollBar
+            {            
+                background-color: rgb(80,80,80);
+                padding-left: 5px;
+                float: left;
+            }
+            div.scrollMain
+            {            
+                background-color: white;
+                float: left;
+            } 
+            
+             /*-------------links and references edits/colors/styles--------------*/
+        a
+            {
+                text-decoration: none;
+                color:white;
+            }            
+        a:hover
+            {
+                background-color:rgb(55,55,55);
+            }
+        
+            /*------------------buttons and their attributes---------------------*/
+        button
+            {
+                -webkit-appearance: button;
+                -moz-appearance: button;
+                appearance: button;  
+                font-family: arial;
+            }
+        button.Github
+            {                
+                background-color:rgb(38,38,38);
+                border: 1px solid rgb(38,38,38);
+                padding: 8px 10px 5px 0;
+                margin-left:800px;
+                
+            }
+        button.NGDL
+            {
+                background-color:black;
+                border: 1px solid black;
+                padding: 8px 100px 10px 20px;              
+            }
+        button.About
+            {
+                background-color: rgb(38,38,38);
+                border:1px solid rgb(38,38,38);
+                padding: 8px 10px 10px 10px;                
+            }
+        button.Library
+            {
+                background-color: black;
+                border:1px solid black
+                    ;
+                padding: 8px 10px 10px 10px;
+            }
+        button.Resources
+            {
+                background-color: rgb(38,38,38);
+                border:1px solid rgb(38,38,38);
+                padding: 8px 10px 10px 10px;                
+            }
+        button.Example  /*for future coders to base off of....do be cautious! May require editing of GITHUB BUTTON padding settings*/
+            {
+                background-color: rgb(38,38,38);
+                border:1px solid rgb(38,38,38);
+                padding: 8px 10px 10px 10px;    
+            }            
+ /*---------------------------------------------------------------------------------------------------------------------*/   
+            
+            
+            
+        </style>
+    </head>
+    
+    <body>
+        
+        <!------------------------------------Header of the Page----------------------------------->
+        <!--This contains all the header buttons that a user would need to navigate through site-->
+        <div class="header">
+            <button class="NGDL" onclick="window.location.href='C:\Users\J72488\Documents\Design Style Guide\DSGHome.html'" style="color:white"><b><small>NGC Design</small></b></button>
+            <button class="About" onclick="window.location.href='C:\Users\J72488\Documents\Design Style Guide\DSGHome.html'" style="color:white"><b><small>About</small></b></button>
+            <button class="Library" onclick="window.location.href='C:\Users\J72488\Documents\Design Style Guide\Library.html'" style="color:white"><b><small>Library</small></b></button>
+            <button class="Resources" onclick="window.location.href='#'" style="color:white"><b><small>Resources</small></b></button>
+            <button class="Example" onclick="window.location.href='#'" style="color:white"><b><small>TabExample1</small></b></button>
+            <button class="Example" onclick="window.location.href='#'" style="color:white"><b><small>TabExample2</small></b></button>
+            
+            <!--GitHub access button-->
+            <button class="Github" onclick="window.location.href='https://github.com/'" style="color:rgb(255,255,255)">
+                    <img src = "C:\Users\J72488\Documents\Design Style Guide\gitIcon.jpg" style="width:20px;height=20px" align="left";><b><small>Go to GitHub</small></b></button>
+            
+        </div>
+        
+        <!---------------------Scroll bar present and enabled--------------------------->        
+        <div class="wrapper">
+            <div class="scrollBar" style="width: 180px; height: 675px; overflow-y: scroll; color:white;">
+                <b><u>Foundation</u></b><br>
+                Colors<br>
+                Grid<br>
+                Icons<br>
+                Layouts<br>
+                Links<br>
+                Typography<br><br>
+
+                <b><u>Components</u></b><br>
+                Alerts and notifications<br>
+                Breadcrumbs<br>
+                Collapsible panels<br>
+                Dialogs<br>
+                Form controls<br>
+                Forms<br>
+                Labels and badges<br>
+                Menus<br>
+                Tables<br>
+                Tabs<br>
+                Tags<br><br>
+
+                <b><u>Patterns</u></b><br>
+                Cards<br>
+                Data formats<br>
+                File upload<br>
+                Filters<br>
+                Search<br>
+                Settings<br>
+                Tours<br>
+                Wizards<br><br>
+
+                <b><u>Examples</u></b><br>
+                Dashboard<br>
+                Gadgets<br>
+                Virtual Reality<br>
+                Marketing<br>
+                test<br>
+                test<br>
+                test<br>
+                test<br>
+                test<br>
+                test<br>
+                test<br>
+                test<br>
+                test<br>          
+            </div>        
+        
+        <!---------------------------------MAIN CONTENT WOULD GO AFTER THIS LINE------------------------------------------>
+            <div class="Main">
+                <!--main content here-->
+                <!--consider adding a scroll bar if there is more content than intended-->
+                <div class="scrollMain" style="width: 100%; height: 675px; overflow-y: scroll;"> <!--this is an example of scroll bar-->
+                </div>
+            </div>
+            
+            
+        </div>
+    </body>
+</html>

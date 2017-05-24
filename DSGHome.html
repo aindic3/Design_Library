@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> About - Northrop Grumman Design Library </title>
+        <style>
+            
+            body
+            {
+                display: inline;
+            }
+            
+            /*styling for various boxes, divisions of the web page*/
+            div.upper
+            {
+                width=55%;
+                height=27%;
+                background-color:rgb(0,90,170); 
+                /*border: 1px solid black;*/
+                padding: 10px 0 0 0;
+            }
+            
+            div.lower
+            {
+                width=55%;
+                height=27%; 
+                border: 1px solid black;
+                padding: 10px 0 0 0;
+                margin: 50px;
+            }
+            
+            div.header{
+                width:100%px; 
+                height:25px; 
+                /*margin:15px auto;*/
+                background-color:rgb(0,90,170); 
+                color:#000000; 
+                padding: 0 0 0 0; 
+            }
+            
+            div.inner
+            {
+                width:50%px; 
+                height: 100px; 
+                /*margin:15px auto;*/
+                background-color:rgb(0,90,170); 
+               /* border:1px solid rgb(0,0,0);*/
+                color:#000000; 
+                padding: 0 0 0 0; 
+                
+            }
+           /* 
+            div.leftCol
+            {
+                width:600px;
+                height:800px;
+                margin:50px 0 0 100px;
+                border: 1px solid black;
+            }
+            
+            div.rightCol
+            {
+                width:600px;
+                height:800px;
+                margin: 0 0 0 750px;
+                border: 1px solid black;                
+            }*/
+            
+                /*division of left and right column on About page*/
+            div.leftCol{
+                width: 30%;
+                float: left;
+                margin-top: 50px;
+                margin-right: 50px;
+                margin-left: 250px;
+            }
+            div.rightCol{
+                width: 30%;
+                margin-top: 50px;
+                margin-right: 250px;
+                margin-left: 50px;
+                float: left;    
+            }
+            
+            div.ngDisclaimer
+            {       
+                width:60%;
+                height:150px;
+                padding: 30px 300px 0 300px;
+                background-color:rgb(102,102,102);
+            }
+            
+                /*columns are configured incorrectly, they are not in-line with text. 
+                 Instead they are wrapper. This "line breaker" will help with future
+                 edits of the information in the paragraphed columns */
+            div.break 
+            {
+                width:100%px;
+                height:1px;
+                margin-top: 30%;
+            }
+            
+            /*----------------paragraph and header edits/formatting/colors------------------*/
+            h2
+            {
+                font-family:"arial";    
+            }
+            
+            /*------------links and references (edits/formatting/buttons------------------------*/
+            
+            .Github
+            {
+                text-decoration: none;
+                background-color:rgb(0,90,170);
+                border: 1px solid white;
+                font-family: arial;
+                /*background-image: url('https://github.com/')*/
+                
+                -webkit-appearance: button;
+                -moz-appearance: button;
+                appearance: button;
+                -moz-border-radius: 20px 20px 20px 20px;
+                -webkit-border-radius: 20px 20px 20px 20px;
+                border-radius: 20px 20px 20px 20px;
+                padding: 5px 20px 5px 10px;
+                
+            }
+            
+            a
+            {
+                text-decoration: none;
+            }
+            
+            a.ViewLibrary   /*stylization for the View Library button */
+            {                
+                background-color: white;
+                border: 1px solid white;
+                font-family: arial;
+                
+                -webkit-appearance: button;
+                -moz-appearance: button;
+                appearance: button;
+                -moz-border-radius: 4px;
+                -webkit-border-radius: 4px;
+                border-radius: 4px;
+                padding: 10px 10px 10px 10px;
+            }
+            
+            a.Download
+            {
+                background-color:rgb(0,90,170);
+                border: 1px solid white;
+                font-family: arial;
+                
+                -webkit-appearance: button;
+                -moz-appearance: button;
+                appearance: button;
+                -moz-border-radius: 4px;
+                -webkit-border-radius: 4px;
+                border-radius: 4px;
+                padding: 10px 20px 10px 20px;
+                margin: 30px;                
+            }
+            
+        
+        </style>
+        
+        <!--<link rel="stylesheet" href="styles.css">-----   this should be the only thing in the head portion of HTML>
+          
+    </head>
+    
+    <!----body of the code in regards to the Home Page of DSG--->
+    <body>
+        <div class = "upper">
+            <div class = "header" align="right">
+                <button class="Github" onclick="window.location.href='https://github.com/'" style="color:rgb(255,255,255)">
+                    <img src = "C:\Users\J72488\Documents\Design Style Guide\gitIcon_blue.jpg" style="width:25px;height=25px" align="left";><b><small>Go to GitHub</small></b></button>
+            </div>
+            <br><br><br><br><br> <!--excessive line breaks-->
+            
+            <center>
+            <h1 style="color:white">Northrop Grumman Design Library</h1>
+                
+            <div class="inner">    
+                <h3 style="color:white">An open source user interface design library featuring style guides, patterns, and designs</h3>
+                <a href="C:\Users\J72488\Documents\Design Style Guide\Library.html" class="ViewLibrary" style="color:rgb(0,90,170)"><b>View Library</b></a>
+                <a href="#" class="Download" style="color:rgb(255,255,255)"><b>Download</b></a>
+            </div>
+                <p align="center" style="color:rgb(153,194,255)"><small>@author - aindic &amp; NGC</small></p>
+                
+            <br><br><br><br><br>  <!--excessive line breaks-->
+            </center>        
+        </div>
+        
+        <!--------------------The About Section of the Page, up for edits and rewriting---------------------------->
+
+                    <!--
+                    <div class="lower">
+                        <div class="leftCol">
+                            <h3>What is this?</h3>
+                                <p>An open source library of patterns, styles, and designs</p>
+
+                            <h3>Who is it for?</h3>
+                                <p>This is intended for anyone affiliated with the Northrop Grumman corporation or partners of the company</p>
+
+                            <h3>What restrictions are there?</h3>
+                                <p>Not sure what to write here...</p>
+
+                            <div class="rightCol">
+                                <h3>How can I use it?</h3>
+                                    <p>You can download our Github open source files or see how these design work in our interactive environment</p>
+
+                                <h3>Why Northrop Grumman?</h3>
+                                    <p>Because we are cool. I don't know what goes here yet.</p>
+
+                                <h3>How can I contribute?</h3>
+                                    <p>Send in your ideas on how we can make our designs better! Who knows? Maybe you'll even get to work here. JK. I am an intern. 
+                                       I have no authority to hire ppl</p>
+                            </div>
+                        </div>
+                    </div> 
+          -------------------------------------------------------------------------------------------------------------->
+        
+        <div class="wrapper"> 
+            <div class="leftCol">
+                <!-- first column of items -->
+                <h2>What is this?</h2>
+                    <p>An open source library of patterns, styles, and designs, which, 
+                        unfortunately due to lack of creativity and coincidental NG colors, reflects the USPTO website (shhhhhhh)</p>
+                <h2>Who is it for?</h2>
+                    <p>This is intended for anyone affiliated with the Northrop Grumman corporation or partners of the company</p>
+                 <h2>What restrictions are there?</h2>
+                    <p>Not sure what to write here...</p>
+            </div>
+            <div class="rightCol">
+                <!-- second column of items -->
+                <h2>How can I use it?</h2>
+                        <p>You can download our GitHub open source files or see how these designs work in our interactive environment</p>
+                <h2>Why Northrop Grumman?</h2>
+                        <p>Because we are cool. I don't know what goes here yet.</p>
+
+                <h2>How can I contribute?</h2>
+                    <p>Send in your ideas on how we can make our designs better! Who knows? Maybe you'll even get to work here. JK. I'm an intern. I have no authority to hire ppl</p>
+            </div>
+        </div>
+        
+        <div class="break"></div>  <!--configuration purposes, see the CSS class "BREAK" for more details-->
+        
+        <div class="ngDisclaimer"><center>
+            <p style="color:white">Northrop Grumman is committed to hiring and retaining a diverse workforce. We are proud to be an Equal Opportunity/Affirmative Action Employer, making decisions without regard to race, color, religion, creed, sex, sexual orientation, gender identity, marital status, national origin, age, veteran status, disability, or any other protected class. U.S. Citizenship is required for most positions. For our complete EEO/AA and Pay Transparency statement, please visit <a href="http://www.northropgrumman.com/CorporateResponsibility/EqualEmploymentOpportunity/Pages/default.aspx?utm_source=PrintAd&utm_medium=Redirect&utm_campaign=EEO_Redirect" style="color:rgb(0,0,205)">www.northropgrumman.com/EEO </a></p>
+            <p style="color:white"><small> &#169; 2017 Northrop Grumman Corporation</small></p></center>
+        </div>   
+
+    </body>
+    
+    
+
+</html>

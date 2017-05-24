@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        
+        /*Every page in the Library will have these set of attributes and 
+        characteristics. This includes the side scroll bar and the
+        header, which has the various tabs users can click to 
+        explore other aspects of the UI other than the Library */
+            
+            
+ /*--------------------standard layout for all pages in the Library portion------------------*/
+           div.header
+            {
+                width:100%;
+                height:35px;
+                border: 1px solid rgb(38,38,38);
+                background-color: rgb(38,38,38);
+            }
+        
+        div.scrollBar
+            {            
+                background-color: rgb(80,80,80);
+                padding-top: 5px;
+                padding-left: 5px;
+                float: left;
+            }
+        div.scrollMain
+            {            
+                background-color: white;
+                float: left;
+            }        
+        div.Main
+            {
+                width:85%;
+                height:675px;
+                border: 1px solid white;  /*remove when comfortable with main content layout*/
+                float: left;
+                padding: 10px 0 0 30px;
+            }  
+     
+            
+             /*-------------links and references edits/colors/styles--------------*/
+        a
+            {
+                text-decoration: none;
+                color:white;
+            }            
+        a:hover
+            {
+                background-color:rgb(55,55,55);
+            }
+        
+            /*------------------buttons and their attributes---------------------*/
+        button
+            {
+                -webkit-appearance: button;
+                -moz-appearance: button;
+                appearance: button;  
+                font-family: arial;
+            }
+        button.Github
+            {                
+                background-color:rgb(38,38,38);
+                border: 1px solid rgb(38,38,38);
+                padding: 8px 10px 5px 0;
+                margin-left:800px;
+                
+            }
+        button.NGDL
+            {
+                background-color:black;
+                border: 1px solid black;
+                padding: 8px 100px 10px 20px;              
+            }
+        button.About
+            {
+                background-color: rgb(38,38,38);
+                border:1px solid rgb(38,38,38);
+                padding: 8px 10px 10px 10px;                
+            }
+        button.Library
+            {
+                background-color: black;
+                border:1px solid black
+                    ;
+                padding: 8px 10px 10px 10px;
+            }
+        button.Resources
+            {
+                background-color: rgb(38,38,38);
+                border:1px solid rgb(38,38,38);
+                padding: 8px 10px 10px 10px;                
+            }
+        button.Example  /*for future coders to base off of....do be cautious! May require editing of GITHUB BUTTON padding settings*/
+            {
+                background-color: rgb(38,38,38);
+                border:1px solid rgb(38,38,38);
+                padding: 8px 10px 10px 10px;    
+            }   
+            
+
+ /*---------------------------------------------------------------------------------------------------------------------*/   
+            
+            
+            
+        </style>
+    </head>
+    
+    <body>
+        
+        <!------------------------------------Header of the Page----------------------------------->
+        <!--This contains all the header buttons that a user would need to navigate through site--->
+        <div class="header">
+            <button class="NGDL" onclick="window.location.href='C:\Users\J72488\Documents\Design Style Guide\DSGHome.html'" style="color:white"><b><small>NGC Design</small></b></button>
+            <button class="About" onclick="window.location.href='C:\Users\J72488\Documents\Design Style Guide\DSGHome.html'" style="color:white"><b><small>About</small></b></button>
+            <button class="Library" onclick="window.location.href='C:\Users\J72488\Documents\Design Style Guide\Library.html'" style="color:white"><b><small>Library</small></b></button>
+            <button class="Resources" onclick="window.location.href='#'" style="color:white"><b><small>Resources</small></b></button>
+            <button class="Example" onclick="window.location.href='#'" style="color:white"><b><small>TabExample1</small></b></button>
+            <button class="Example" onclick="window.location.href='#'" style="color:white"><b><small>TabExample2</small></b></button>
+            
+            <!--GitHub access button-->
+            <button class="Github" onclick="window.location.href='https://github.com/'" style="color:rgb(255,255,255)">
+                    <img src = "C:\Users\J72488\Documents\Design Style Guide\gitIcon.jpg" style="width:20px;height=20px" align="left";><b><small>Go to GitHub</small></b></button>
+            
+        </div>
+        
+        <!---------------------Scroll bar present and enabled--------------------------->        
+        <div class="wrapper">
+            <div class="scrollBar" style="width: 180px; height: 675px; overflow-y: scroll; color:white;">
+                <b><u>Foundation</u></b><br>
+                             <div class="panel-group">
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                      <a data-toggle="collapse" href="#collapse1" style="rgb:white">Colors</a>
+                                  </div>
+                                    <div id="collapse1" class="panel-collapse collapse">
+                                    <div class="panel-body">&emsp;Primary</div>
+                                    <div class="panel-footer">&emsp;Secondary</div>
+                                  </div>
+                                </div>
+                              </div>
+                
+                Grid<br>
+                Icons<br>
+                Layouts<br>
+                Links<br>
+                Typography<br><br>
+
+                <b><u>Components</u></b><br>
+                Alerts and notifications<br>
+                Breadcrumbs<br>
+                Collapsible panels<br>
+                Dialogs<br>
+                Form controls<br>
+                Forms<br>
+                Labels and badges<br>
+                Menus<br>
+                Tables<br>
+                Tabs<br>
+                Tags<br><br>
+
+                <b><u>Patterns</u></b><br>
+                Cards<br>
+                Data formats<br>
+                File upload<br>
+                Filters<br>
+                Search<br>
+                Settings<br>
+                Tours<br>
+                Wizards<br><br>
+
+                <b><u>Examples</u></b><br>
+                Dashboard<br>
+                Gadgets<br>
+                Virtual Reality<br>
+                Marketing<br>
+                test<br>
+                test<br>
+                test<br>
+                test<br>
+                test<br>
+                test<br>
+                test<br>
+                test<br>
+                test<br>          
+            </div>        
+        
+        <!---------------------------------MAIN CONTENT WOULD GO AFTER THIS LINE------------------------------------------>
+            <div class="Main">
+                <div class="scrollMain" style="width: 100%; height: 675px; overflow-y: scroll;">
+                    <h2>Northrop Grumman Official Colors</h2>
+                    <p>The following colors are Northrop Grumman's official colors</p>
+                    <h3>Primary Colors</h3>
+                    <p>Blue rgb(0,90,170) &emsp; Gray rgb(162,152,138) &emsp; Black rgb(0,0,0) &emsp; White rgb(255,255,255)</p>
+                    <h3>Secondary Colors</h3>
+                    <p>Not even sure this is applicable but here it is!</p><br>
+
+
+
+                    <table align="left" style="width:95%" style="table-layout:fixed">
+                        <tr>
+                            <td><span id="range">0</span> <!--pertaining to slider 1--> </td>
+                             <td><span id="range">0</span> <!--pertaining to slider 2--></td> 
+                            <td><span id="range">0</span> <!--pertaining to slider 3--></td>
+                       </tr>
+                    </table>
+
+                    <svg width="400" height="50">
+                       <rect width="400" height="50" style="fill:rgb(255,0,0);" />
+                    </svg> 
+                    <svg width="400" height="50">
+                       <rect width="400" height="50" style="fill:rgb(0,100,0);" />
+                    </svg> 
+                    <svg width="400" height="50">
+                       <rect width="400" height="50" style="fill:rgb(0,0,255);" />
+                    </svg>
+
+                    <br>
+
+                    <!--slider 1-->
+                    &emsp;&emsp;
+                    <input type="range" min="0" max="255" value="0" onchange="showValue(this.value)"/>
+                            <script type="text/javascript">
+                            function showValue(newValue)
+                            {
+                                document.getElementById("range").innerHTML=newValue;
+                            }
+                            </script>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+                    <input type="range" min="0" max="255" value="0" onchange="showValue(this.value)"/>
+                            <script type="text/javascript">
+                            function showValue(newValue)
+                            {
+                                document.getElementById("range").innerHTML=newValue;
+                            }
+                            </script>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+                    <input type="range" min="0" max="255" value="0" onchange="showValue(this.value)"/>
+                            <script type="text/javascript">
+                            function showValue(newValue)
+                            {
+                                document.getElementById("range").innerHTML=newValue;
+                            }
+                            </script>
+                    <br><br><br><br><br><br><br><br><br><br><br><br>
+                    <p>blah blah blah blah</p> <br><br><br><br><br><br><br>
+                    <p>more blah blah blah</p>
+                </div>
+            </div>
+            
+        
+        </div>
+    </body>
+</html>
